@@ -1,0 +1,7 @@
+.movie-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10vh 5vw;
+    justify-content: center;
+    padding-top: 10vh;
+}

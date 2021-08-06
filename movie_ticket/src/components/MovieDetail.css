@@ -1,0 +1,61 @@
+.movie-detail{
+    display: flex;
+    flex-direction: column;
+    padding: 50px
+}
+
+.movie-detail-title{
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.movie-detail-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-detail-line{
+    padding: 10px;
+    border-right: 1px gray solid;
+    height: 300px;
+    align-items: center 
+}
+
+.movie-detail-body-description{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.movie-detail-info{
+    font-weight: bold;
+    color: blue;
+}
+
+.movie-detail-body-purchase{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0px 30px;
+}
+
+.movie-detail-body-purchase-button{
+    display: flex;
+    width: 45%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px black solid;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.b1{
+    background-color: #6699ff;
+}

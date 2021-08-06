@@ -1,0 +1,12 @@
+.movie{
+    display: flex;
+    flex-direction: column;
+    height: 425px;
+    width: 300px;
+}
+
+.movie-title{
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
