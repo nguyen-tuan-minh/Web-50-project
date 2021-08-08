@@ -6,7 +6,7 @@ let db = {
 }
 
 const initDatabase = () => {
-    const mongoUrl = "mongodb://localhost:27017"
+    const mongoUrl = "mongodb+srv://Minh:Minh13%2F0803@cluster0.2a8lu.mongodb.net/test?authSource=admin&replicaSet=atlas-30x66g-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true"
     const client = new MongoClient(mongoUrl, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
