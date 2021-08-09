@@ -14,7 +14,7 @@ const Register = (props) => {
     const handleSignUp = (e) => {
         e.preventDefault()
         if (password.length >= 8 & username.length >= 4) {
-            fetch('http://localhost:5000/user/register', {
+            fetch('https://movie-ticket-back.herokuapp.com/user/register', {
                 method: 'Post',
                 headers: {
                     'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ const Register = (props) => {
     }
     const handleSignIn = (e) => {
         e.preventDefault()
-        fetch('http://localhost:5000/user/login', {
+        fetch('https://movie-ticket-back.herokuapp.com/user/login', {
             method: 'Post',
             headers: {
                 'Content-Type': 'application/json'

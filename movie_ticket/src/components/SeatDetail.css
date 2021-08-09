@@ -2,6 +2,17 @@
     padding: 30px 100px;
 }
 
+.seat-detail-default{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 100;
+}
+
 .seat-detail-name{
     font-weight: 500;
     font-size: 50px;

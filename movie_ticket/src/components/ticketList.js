@@ -6,7 +6,7 @@ const TicketList = (props) => {
     const [loading, setLoading] = useState(true)
     const [data, setData] = useState()
     const getTicket = () => {
-        fetch("http://localhost:5000/movie/ticket", {
+        fetch("https://movie-ticket-back.herokuapp.com/movie/ticket", {
             method: "Post",
             headers: {
                 "Content-Type": "application/json",
@@ -23,7 +23,7 @@ const TicketList = (props) => {
     }
     const returnTicket = (tId) => {
         if(window.confirm("You are returning your ticket. Do you want to proceed ?") ){
-            fetch("http://localhost:5000/movie/ticket", {
+            fetch("https://movie-ticket-back.herokuapp.com/movie/ticket", {
                 method: "Delete",
                 headers: {
                     "Content-Type": "application/json",

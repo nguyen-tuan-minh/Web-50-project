@@ -57,7 +57,7 @@ const SeatDetail = (props) => {
   const [preminum, setPreminum] = useState(false)
   const row = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
   const getData = () => {
-    fetch("http://localhost:5000/movie/seat", {
+    fetch("https://movie-ticket-back.herokuapp.com/movie/seat", {
       method: "Post",
       headers: {
         "Content-Type": "application/json",
@@ -76,7 +76,7 @@ const SeatDetail = (props) => {
     if(props.username){
       const question = "Do you want to buy this ticket for seat " + seat + "?"
       if(window.confirm(question)){
-        fetch("http://localhost:5000/movie/ticket/buy", {
+        fetch("https://movie-ticket-back.herokuapp.com/movie/ticket/buy", {
           method: "Post",
           headers: {
             "Content-Type": "application/json",
@@ -103,7 +103,7 @@ const SeatDetail = (props) => {
   };
   useEffect(getData, [yourSeat, props.mId]);
   return loading ? (
-    <div> Loading... </div>
+    <div className = "seat-detail-default"> Loading... </div>
   ) : (
     <div className="seat-detail">
       <div className="seat-detail-name">{props.mName}</div>

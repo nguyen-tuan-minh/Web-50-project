@@ -13,8 +13,8 @@ initDatabase()
 
 app.use(router)
 
-app.listen(5000,(err) =>{
+app.listen(process.env.PORT,(err) =>{
     if(!err){
-        console.log("App is running at 5000")
+        console.log("App is running at " + process.env.PORT)
     }
 })
